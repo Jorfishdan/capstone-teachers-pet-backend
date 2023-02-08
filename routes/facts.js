@@ -23,14 +23,15 @@ router.get("/", (req, res) => {
   });
 
   router.post("/", (req,res) => {
-    const {question, correct_answer, incorrect_answer, explanation} = req.body;
+    const {question, category, type, difficulty, correct_answer, incorrect_answer, explanation} = req.body;
     const newFact ={
         id: uuid(),
-        category: "misc",
-        type: Boolean,
-        difficulty: "easy",
+        category,
+        type,
+        difficulty,
         question, 
         correct_answer,
+        incorrect_answer,
         explanation,
     };
     facts.push(newFact);
