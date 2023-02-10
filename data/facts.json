@@ -100,12 +100,10 @@
     "explanation": "It's so they don't float away from each other"
   },
   {
-    "id": "a6bb962b-f508-474b-94ab-4270ccae1df6",
-    "category": "Misc",
-    "difficulty": "easy",
-    "question": "test",
-    "correct_answer": "test",
-    "incorrect_answer": "test",
-    "explanation": "test"
+    "id": "7a113193-36fa-4667-a831-9a2ce1627e46",
+    "question": "Polar bear fur is white",
+    "correct_answer": "False",
+    "incorrect_answer": "True",
+    "explanation": "Polar bear fur is clear"
   }
 ]

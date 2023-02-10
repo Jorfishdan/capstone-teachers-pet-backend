@@ -10,9 +10,9 @@ router.get("/", (req, res) => {
     const displayFact = factGallery.map((info) => {
       return {
         id: info.id,
-        category: info.category,
-        type: info.type,
-        difficulty: info.difficulty,
+        // category: info.category,
+        // type: info.type,
+        // difficulty: info.difficulty,
         question: info.question,
         correct_answer: info.correct_answer,
         incorrect_answer:info.incorrect_answer,
@@ -26,9 +26,9 @@ router.get("/", (req, res) => {
     const {question, category, type, difficulty, correct_answer, incorrect_answer, explanation} = req.body;
     const newFact ={
         id: uuid(),
-        category,
-        type,
-        difficulty,
+        // category,
+        // type,
+        // difficulty,
         question, 
         correct_answer,
         incorrect_answer,
@@ -45,12 +45,5 @@ router.get("/", (req, res) => {
     return JSON.parse(factPreview);
   }
   
-//   router.get("/:id", (req, res) => {
-//     const videoMain = videoList();
-//     const heroVideo = videoMain.find((mainVid) => {
-//       return mainVid.id === req.params.id
-//     });
-//     res.send(heroVideo);
-//   });
 
 module.exports = router;
