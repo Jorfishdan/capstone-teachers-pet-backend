@@ -16,23 +16,7 @@ router.get("/", (req, res) => {
     res.send(displayCallbacks);
   });
 
-//   router.post("/", (req,res) => {
-//     const {question, category, type, difficulty, correct_answer, incorrect_answer, explanation} = req.body;
-//     const newFact ={
-//         id: uuid(),
-//         // category,
-//         // type,
-//         // difficulty,
-//         question, 
-//         correct_answer,
-//         incorrect_answer,
-//         explanation,
-//     };
-//     facts.push(newFact);
-//     res.json(newFact)
-//     fs.writeFileSync("./data/facts.json", JSON.stringify(facts))
 
-//   })
 
   function callbacksList() {
     const callbacksPreview = fs.readFileSync("./data/callbacks.json");

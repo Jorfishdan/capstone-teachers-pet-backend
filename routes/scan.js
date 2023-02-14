@@ -16,24 +16,6 @@ router.get("/", (req, res) => {
     res.send(displayScan);
   });
 
-//   router.post("/", (req,res) => {
-//     const {question, category, type, difficulty, correct_answer, incorrect_answer, explanation} = req.body;
-//     const newFact ={
-//         id: uuid(),
-//         // category,
-//         // type,
-//         // difficulty,
-//         question, 
-//         correct_answer,
-//         incorrect_answer,
-//         explanation,
-//     };
-//     facts.push(newFact);
-//     res.json(newFact)
-//     fs.writeFileSync("./data/facts.json", JSON.stringify(facts))
-
-//   })
-
   function scanList() {
     const scanPreview = fs.readFileSync("./data/scan.json");
     return JSON.parse(scanPreview);
