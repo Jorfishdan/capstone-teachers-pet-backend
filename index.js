@@ -13,7 +13,6 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/facts", factsRoutes);
-// app.use(express.static('public'))
 
 app.use("/scan", scanRoutes)
 app.use("/dog", dogRoutes)
