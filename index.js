@@ -5,7 +5,6 @@ const cors = require("cors");
 require('dotenv').config()
 const factsRoutes = require("./routes/facts");
 const dogRoutes = require("./routes/dog")
-const scanRoutes = require("./routes/scan")
 const callbacksRoutes = require("./routes/callbacks")
 
 
@@ -14,7 +13,7 @@ app.use(express.json());
 
 app.use("/facts", factsRoutes);
 
-app.use("/scan", scanRoutes)
+
 app.use("/dog", dogRoutes)
 app.use("/callbacks", callbacksRoutes)
 
